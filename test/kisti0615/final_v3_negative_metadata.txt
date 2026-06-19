@@ -1,0 +1,7 @@
+[Task 1 Execution Metadata - KISTI MPI (All Candidates Version)]
+Tanimoto Cutoff: 0.3700
+Positive MW 5-95% Range: 115.0180 ~ 537.2080
+Positive LogP 5-95% Range: -0.7000 ~ 6.0000
+Total Agrochemical Positives: 3085
+Total Selected Negatives: 3085
+Random Sampling Seed: 79470
