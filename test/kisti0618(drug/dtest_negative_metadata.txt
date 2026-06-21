@@ -1,6 +1,0 @@
-[Task 1 Execution Metadata - KISTI MPI (Two-Pass Optimized Version)]
-Tanimoto Cutoff: 0.4900
-Total Agrochemical Positives: 15361
-Total Selected Negatives: 15361
-Random Sampling Seed: 60581
-Testing Mode Enabled: True

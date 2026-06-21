@@ -1,4 +1,0 @@
-/var/spool/pbs/mom_priv/jobs/22520564.pbs.SC: line 14: unset: `BASH_FUNC_module%%': not a valid identifier
-/var/spool/pbs/mom_priv/jobs/22520564.pbs.SC: line 19: module: command not found
-/var/spool/pbs/mom_priv/jobs/22520564.pbs.SC: line 20: module: command not found
-env: mpirun: No such file or directory

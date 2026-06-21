@@ -1,0 +1,6 @@
+[Task 1 Execution Metadata - KISTI MPI (Random Target Subsampling Version)]
+Tanimoto Cutoff: 0.4400
+Total Drug Positives: 15361
+Total Selected Negatives: 15361
+Random Sampling Seed: 64163
+Testing Mode Enabled: False
