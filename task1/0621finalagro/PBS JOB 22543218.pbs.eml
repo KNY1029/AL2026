@@ -1,0 +1,56 @@
+Delivered-To: nahappy1029@gmail.com
+Received: by 2002:a17:907:3c8e:b0:c0b:b9a4:43ca with SMTP id gl14csp1221104ejc;
+        Sun, 21 Jun 2026 11:24:43 -0700 (PDT)
+X-Received: by 2002:a05:6a21:7018:b0:3b4:8fb2:a34b with SMTP id adf61e73a8af0-3bb6a2dcb02mr11938365637.11.1782066283002;
+        Sun, 21 Jun 2026 11:24:43 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1782066282; cv=none;
+        d=google.com; s=arc-20260327;
+        b=rMaDDAns28Hw1IebDFGFk4QgmOOR4OcU6yLuNzQTk3Pbxq6P3KaK1dYZQG82Ta2THK
+         jI2PbVOahVAskGEvOJqeKmluMNVMdpDX/wApBIL4DvCaZfv1m5r4x5YBOxB/EW4K+33H
+         9gOF5IPdcdMB5j2IAPguJS9yxC2QyZM5xhEr7OgwGz+55iPZ561tXIJOcorTkIUO6qCJ
+         sBB8IKHYns10T4p++H55B8WrEwL4yjIotP/CBC4DQWZtuwdD5G9sdnj+3aByfD0HKI1b
+         9U6EFr3uk1E+TtMgION/oB/A9y/2TG4sqeeOE6DlaUe9U2wJy/pvsyAYVhEEg8+EsD7L
+         J2+Q==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=from:date:message-id:subject:to;
+        bh=s3GtIw+Cz88pUyQSXW9IAgpHpPUMbmEBlJD33Sg6kGM=;
+        fh=ePkJhg+oA92qOwdwBu8XkC4e8657hdQLsJd0zDRiZiA=;
+        b=M+fgQysexVTqONTl7EAsxDU9xGWdeK0qO9gRizrDup4dy2f4V7TDdCWSLigHst1zem
+         mxao5o6Tpd8qucjKimBCMYOfqGpulJbj8xTvKxcHXwArSFlvEoEokhOePXFHZccuPTYj
+         BfjTtOeIN/vQpH8HowPFFpZXq7oBy0aNQFEIDvlV/rj34T0hFX9ZA55Q/eTwyvqgTFlf
+         fsBuiGlR4n+kZSqBMCjqADQAH4XEJVVuXSVy6m7II/djd/+HuGYGUxZmNPy4mfl7WaXD
+         TCgI6MIWiBcHMymlbubL/l70RyW3XpTWk6qZpBiMv9Rb0B56rKeyWpUhh8bCLV5z5Lkb
+         L36w==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       spf=pass (google.com: domain of noreply@ksc.re.kr designates 150.183.150.14 as permitted sender) smtp.mailfrom=noreply@ksc.re.kr
+Return-Path: <noreply@ksc.re.kr>
+Received: from login04.cm ([150.183.150.14])
+        by mx.google.com with ESMTPS id 41be03b00d2f7-c8bc20f1305si9106727a12.69.2026.06.21.11.24.42
+        for <nahappy1029@gmail.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Sun, 21 Jun 2026 11:24:42 -0700 (PDT)
+Received-SPF: pass (google.com: domain of noreply@ksc.re.kr designates 150.183.150.14 as permitted sender) client-ip=150.183.150.14;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of noreply@ksc.re.kr designates 150.183.150.14 as permitted sender) smtp.mailfrom=noreply@ksc.re.kr
+Received: from ksc.re.kr (pbs1.ib [10.149.2.29])
+	by login04.cm (8.14.7/8.14.7) with ESMTP id 65LIOep1092068
+	for <nahappy1029@gmail.com>; Mon, 22 Jun 2026 03:24:40 +0900
+Received: by ksc.re.kr (Postfix, from userid 0)
+	id E7F7310049A056; Mon, 22 Jun 2026 03:24:40 +0900 (KST)
+To: nahappy1029@gmail.com
+Subject: PBS JOB 22543218.pbs
+Message-Id: <20260621182440.E7F7310049A056@ksc.re.kr>
+Date: Mon, 22 Jun 2026 03:24:40 +0900 (KST)
+From: noreply@ksc.re.kr (NURION PBS)
+
+PBS Job Id: 22543218.pbs
+Job Name:   0620_2negative_data
+Execution terminated
+Exit_status=0
+resources_used.cpupercent=6400
+resources_used.cput=2013:18:29
+resources_used.mem=21671356kb
+resources_used.ncpus=256
+resources_used.vmem=71258112kb
+resources_used.walltime=31:27:46
