@@ -1,5 +1,8 @@
 # ==============================================================================
 # [가산 B] 스코어 기반 구조 생성을 실행한다 (MPI 분산 환경을 지원한다).
+#
+# ▼ 실행 방법은 다음과 같다 ▼
+#   - 터미널에서 실행한다: mpirun -np <N_CORES> python finalV7_taskB.py
 # ==============================================================================
 
 import os
@@ -171,6 +174,31 @@ if rank == 0:
     plt.close()
     
     print(f"결과 시각화 이미지 저장을 완료하였다: {HISTOGRAM_PNG}, {SCATTER_PNG}")
+
+    # (3) 탐색된 모든 분자 구조 및 점수를 CSV 파일로 저장한다.
+    import pandas as pd
+    df_history = pd.DataFrame(list(history.items()), columns=['SMILES', 'Score'])
+    df_history = df_history.sort_values(by='Score', ascending=False).reset_index(drop=True)
+    CSV_OUTPUT = 'taskB_generated_molecules.csv'
+    df_history.to_csv(CSV_OUTPUT, index=False, encoding='utf-8')
+    print(f"탐색된 분자 구조 목록 CSV 저장을 완료하였다: {CSV_OUTPUT}")
+
+    # (4) 상위 8개 분자 구조 시각화 이미지 생성 및 저장한다.
+    from rdkit.Chem import Draw
+    top_8 = df_history.head(8)
+    top_mols = []
+    top_legends = []
+    for idx, row in top_8.iterrows():
+        mol = Chem.MolFromSmiles(row['SMILES'])
+        if mol:
+            top_mols.append(mol)
+            top_legends.append(f"Rank {idx+1} (Score: {row['Score']:.4f})")
+    
+    if top_mols:
+        GRID_PNG = 'taskB_top_molecules.png'
+        img = Draw.MolsToGridImage(top_mols, molsPerRow=4, subImgSize=(250, 250), legends=top_legends)
+        img.save(GRID_PNG)
+        print(f"상위 분자 구조 그리드 시각화 이미지 저장을 완료하였다: {GRID_PNG}")
 
 else:
     # Worker 프로세스 루프이다.
