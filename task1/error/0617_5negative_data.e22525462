@@ -1,0 +1,9 @@
+-bash: module: line 1: syntax error: unexpected end of file
+-bash: error importing function definition for `BASH_FUNC_module'
+=>> PBS: job killed: walltime 172840 exceeded limit 172799
+[mpiexec@node2044] HYD_sock_write (../../../../../src/pm/i_hydra/libhydra/sock/hydra_sock_intel.c:360): write error (Bad file descriptor)
+[mpiexec@node2044] HYD_sock_write (../../../../../src/pm/i_hydra/libhydra/sock/hydra_sock_intel.c:360): write error (Bad file descriptor)
+[mpiexec@node2044] HYD_sock_write (../../../../../src/pm/i_hydra/libhydra/sock/hydra_sock_intel.c:360): write error (Bad file descriptor)
+[mpiexec@node2044] wait_proxies_to_terminate (../../../../../src/pm/i_hydra/mpiexec/intel/i_mpiexec.c:527): downstream from host node2154 exited with status 255
+[mpiexec@node2044] wait_proxies_to_terminate (../../../../../src/pm/i_hydra/mpiexec/intel/i_mpiexec.c:527): downstream from host node5493 exited with status 255
+[mpiexec@node2044] wait_proxies_to_terminate (../../../../../src/pm/i_hydra/mpiexec/intel/i_mpiexec.c:527): downstream from host node6824 exited with status 255

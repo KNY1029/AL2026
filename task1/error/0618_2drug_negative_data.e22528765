@@ -1,0 +1,8 @@
+=>> PBS: job killed: walltime 172918 exceeded limit 172799
+[mpiexec@node4666] HYD_sock_write (../../../../../src/pm/i_hydra/libhydra/sock/hydra_sock_intel.c:360): write error (Bad file descriptor)
+[mpiexec@node4666] HYD_sock_write (../../../../../src/pm/i_hydra/libhydra/sock/hydra_sock_intel.c:360): write error (Bad file descriptor)
+[mpiexec@node4666] HYD_sock_write (../../../../../src/pm/i_hydra/libhydra/sock/hydra_sock_intel.c:360): write error (Bad file descriptor)
+[mpiexec@node4666] HYD_sock_write (../../../../../src/pm/i_hydra/libhydra/sock/hydra_sock_intel.c:360): write error (Bad file descriptor)
+[mpiexec@node4666] wait_proxies_to_terminate (../../../../../src/pm/i_hydra/mpiexec/intel/i_mpiexec.c:527): downstream from host node4910 exited with status 255
+[mpiexec@node4666] wait_proxies_to_terminate (../../../../../src/pm/i_hydra/mpiexec/intel/i_mpiexec.c:527): downstream from host node4950 exited with status 255
+[mpiexec@node4666] wait_proxies_to_terminate (../../../../../src/pm/i_hydra/mpiexec/intel/i_mpiexec.c:527): downstream from host node5242 exited with status 255
